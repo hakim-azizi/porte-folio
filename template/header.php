@@ -207,7 +207,7 @@ if($real_url==='/index.php'){$page_title='Hakim AZIZI';}
 				<p><a href='./'>accueil</a></p>
 				<ul>
 					<li><a href='porte-folio.html'>Porte folio</a></li>
-					<li><a href='projet.html'>Projet</a></li>
+					<li><a href='project.html'>Projet</a></li>
 					<li><a href='collaboration.html'>Collaboration</a></li>
 					<li><a href='contact.html'>Contact</a></li>
 				</ul>
