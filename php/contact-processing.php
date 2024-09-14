@@ -4,11 +4,11 @@ require 'security.php';
 $validate=$_SESSION['validate'];
 $validate_post=md5($_POST['boat']);
 $response='';
-if(!empty($_POST['boat1']) OR $validate_post!==$validate){$response='la validation anti robot a échouer<br>';}else{
-	if(!isset($_POST['email'])) { $response.='le champs mail est vide<br>'; }
-	if(!isset($_POST['subject'])) { $rseponse.='le champs sujet est vide<br>'; } 
-	if(!isset($_POST['message'])) { $rsponse.='le champs message est vide<br>'; }
-	if(!isset($_POST['name'])) { $response.='le champs nom est vide<br'; }
+if(!empty($_POST['boat1']) OR $validate_post!==$validate){$response='La validation anti robot a échou&eacute;.<br>';}else{
+	if(!isset($_POST['email'])) { $response.='le champs mail est vide.<br>'; }
+	if(!isset($_POST['subject'])) { $rseponse.='Le champs sujet est vide.<br>'; } 
+	if(!isset($_POST['message'])) { $rsponse.='Le champs message est vide.<br>'; }
+	if(!isset($_POST['name'])) { $response.='Le champs nom est vide.<br'; }
 	$tel=preg_replace('#[^+0-9]#',' ',$_POST['tel']);
 	if(!preg_match("#^([a-zA-Z][a-zA-Z0-9_.\-]{5,100})@([a-zA-Z0-9_.\-]{5,100})\.([a-z]{2,4})$#",$_POST['email'])){
 		$response='Une erreur c&apos;est produite veuillez réessayer plus tard.';
@@ -35,7 +35,7 @@ if(!empty($_POST['boat1']) OR $validate_post!==$validate){$response='la validati
 	}
 }
 if($response===''){
-	if(/* mail($email,$subject,$message,$header) */ 1===1){
+	if(mail($email,$subject,$message,$header)){
 		$response='L&apos;email a bien &eacute;t&eacute; envoy&eacute;.';
 		if(@$receive_mail){$response.='je m&apos;envoie aussi le mail';}
 	}else{
