@@ -38,7 +38,7 @@ include 'template/header.php';
                     <address>1 avenue Jean Vigo<br>44300 Nantes</address>
                 </section>
             </main>
-            <div><?php echo $response; ?></div>
+            <div class='response'><?php echo $response; ?></div>
             <form action='traitement/contact-processing.html' method='post'>
                 <label>
                     <input type='text' name='name' placeholder='Nom Pr&eacute;nom' required>
