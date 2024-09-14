@@ -1,0 +1,20 @@
+.content2 {
+    overflow: hidden;
+}
+
+#resize {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2%;
+    width: 304%;
+}
+
+.slide {
+    width: 32%;
+    display:block;
+}
+
+.slide>img{
+    width:100%;
+    height:auto;
+}
