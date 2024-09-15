@@ -1,6 +1,5 @@
 div {
     margin-left: 4%;
-    height: 200px;
     width: 92%;
     overflow: hidden;
 }
@@ -10,7 +9,13 @@ figure {
     flex-wrap: nowrap;
     gap: 2%;
 }
-figure>img {
-    height: auto;
+figure>a {
     width: 23.5%;
+    min-width: 250px;
+}
+
+figure>a>img {
+    height: auto;
+    width: 100%;
+    min-width: 300px;
 }
