@@ -22,10 +22,13 @@ a {
 }
 
 .header>nav{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding:0 1rem;
 	background: var(--light-color);
 }
 
@@ -41,16 +44,59 @@ a {
 .header>nav>ul>li {
 	text-align: center;
 	list-style: none;
-
 	width: 100px;
 }
 
 .header>nav>p>a,
 .header>nav>ul>li>a {
+	font-weight: bold;
 	color: var(--dark-color);
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
+.menu {
+	display: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 650px){
+	.header>nav>ul {
+		display:none;
+		position:fixed;
+		top: 22px;
+		right: 0px;
+		flex-direction: column;
+		background: var(--light-color);
+		padding: 1rem;
+	}
+
+	.menu {
+		display: block;
+		margin-right: 1rem;
+	}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 .content,
 .title {
