@@ -1,4 +1,24 @@
-<?php require "template/header.php"; ?>
+<?php 
+$picture = scandir('./photo');
+$lenght_array = count($picture);
+$number_picture=-1;
+$array_picture=[];
+for($i=0;$i<$lenght_array;$i++){
+	if(strstr($picture[$i],'.jpg')){
+		$number_picture++;
+		array_push($array_picture,$picture[$i]);
+	}
+}
+require "template/header.php"; ?>
+<div><figure>
+<?php
+for($i=0;$i<$number_picture;$i++){
+?>
+<img src='photo/<?php echo $array_picture[$i]; ?>'>
+<?php
+}
+?>
+</figure></div>
             <main class='content'>              
               <section>
                   <h2> Mon parcours vers le d&eacute;veloppement web</h2> 

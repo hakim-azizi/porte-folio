@@ -41,12 +41,12 @@ a {
 .header>nav>ul>li {
 	text-align: center;
 	list-style: none;
-
 	width: 100px;
 }
 
 .header>nav>p>a,
 .header>nav>ul>li>a {
+	font-weight: bold;
 	color: var(--dark-color);
 	margin-top: auto;
 	margin-bottom: auto;

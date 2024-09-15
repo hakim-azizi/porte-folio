@@ -35,13 +35,22 @@ if(!empty($_POST['boat1']) OR $validate_post!==$validate){$response='La validati
 	}
 }
 if($response===''){
-	if(mail($email,$subject,$message,$header)){
+	$header = "From: $name <$email>\n";
+	$header .= "MIME-version: 1.0\n";
+	$header .= "Content-type: text/html; charset= iso-8859-1\n";
+
+	$header1 = "From: Hakim AZIZI <no-reply>\n";
+	$header1 .= "MIME-version: 1.0\n";
+	$header1 .= "Content-type: text/html; charset= iso-8859-1\n";
+
+	if(mail('hakazizi@hotmail.com',$subject,$message,$header)){
 		$response='L&apos;email a bien &eacute;t&eacute; envoy&eacute;.';
-		if(@$receive_mail){$response.='je m&apos;envoie aussi le mail';}
+		if(@$receive_mail){mail($email,$subject,$message,$header1);}
 	}else{
-       $response='Une erreur c&apos;est produite, veuillez réessayer plus tard.';
+		$response='Une erreur c&apos;est produite, veuillez réessayer plus tard.';
 	}
 }
+
 $_SESSION['validate']='';
 $_SESSION['response']=$response;
 header('location: ../contact.html')

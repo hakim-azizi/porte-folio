@@ -14,6 +14,9 @@ if($real_url==='/index.php'){$page_title='Hakim AZIZI';}
 		<meta name='contactcity' content='Nantes'>
 		<meta name='language' content='fr'>
 		<link href="style/style.css" rel="stylesheet" type="text/css">
+<?php if($page_title==='Hakim AZIZI'){ ?>
+		<link href="style/home.css" rel="stylesheet" type="text/css">
+<?php } ?>
 <?php if($page_title==='contact'){ ?>
 		<link href="style/contact.css" rel="stylesheet" type="text/css">
 <?php } ?>

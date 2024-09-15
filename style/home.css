@@ -1,0 +1,16 @@
+div {
+    margin-left: 4%;
+    height: 200px;
+    width: 92%;
+    overflow: hidden;
+}
+
+figure {
+	display: flex;
+    flex-wrap: nowrap;
+    gap: 2%;
+}
+figure>img {
+    height: auto;
+    width: 23.5%;
+}
