@@ -141,13 +141,22 @@ footer {
 	color: var(--dark-color);
 }
 
+.screen,
 .alignment{
 	float: left;
-	width:30%;
-	min-width: 300px;
 	margin-right: 1%;
+	min-width: 300px;
 }
 
+.alignment{
+width:30%;
+}
+
+.screen{
+	width:49%;
+}
+
+.screen>img,
 .alignment>img{
 	width:100%;
 }
