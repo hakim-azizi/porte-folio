@@ -30,8 +30,8 @@ if(!@$_GET['project']){ ?>
   </div>
 </section>
 <?php
-}else{echo $_GET['project'];}
-?>
+}else{ ?> <img src="../photo/<?php echo $screen; ?>" alt="<?php echo $alt; ?>">
+<?php } ?>
 </main>
 <?php
 include 'template/footer.php';
