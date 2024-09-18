@@ -1,7 +1,9 @@
 <?php
 require './php/security.php';
-$page_title = str_replace(['/','.html'],'',$request_url);
+$page_title = str_replace(['/','-l-','-','.html'],['',' l&apos;',' ',''],$request_url);
 if($page_title==='projects'){$page_title='Projets';}
+if(@$_GET['project']){$page_title=str_replace('projects','projet ',$page_title);}
+if($adjust_url===''){$adjust_url='../';}
 if($real_url==='/index.php'){$page_title='Hakim AZIZI';}
 ?><!DOCTYPE html>
 <html lang='fr'>
