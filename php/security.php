@@ -30,9 +30,9 @@ $adjust_url=preg_replace(array("@(^[/]{1})@","@([A-Za-z0-9:_\=\&\.\?\+\%\-])@","
 $real_url=$_SERVER['PHP_SELF'];
 
 if(@$_GET['project']){
-require 'data-base.php';
+require 'database.php';
 $data_projet=mysqli_query($connectionbd,"SELECT * FROM `project` WHERE `name`='".$_GET['project']."'");
 $project=mysqli_fetch_array($data_projet);
-if(@$project['name']===NULL){require '404.php';}else{extract($project);}
+if(mb_strlen(@$project['name'])===0){require '404.php';}else{extract($project);}
 }
 ?>

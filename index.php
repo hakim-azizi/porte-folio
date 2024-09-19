@@ -1,7 +1,7 @@
 <?php 
 $picture = scandir('./photo');
 $lenght_array = count($picture);
-$number_picture=-1;
+$number_picture=0;
 $array_picture=[];
 for($i=0;$i<$lenght_array;$i++){
 	if(strstr($picture[$i],'.jpg')){

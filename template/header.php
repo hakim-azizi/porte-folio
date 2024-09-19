@@ -36,6 +36,7 @@ if($real_url==='/index.php'){$page_title='Hakim AZIZI';}
 					<li><a href='<?php echo $adjust_url; ?>projects.html'>Projets</a></li>
 					<li><a href='<?php echo $adjust_url; ?>collaboration.html'>Collaboration</a></li>
 					<li><a href='<?php echo $adjust_url; ?>contact.html'>Contact</a></li>
+					<li><a href='<?php echo $adjust_url; ?>partenaire.html'>Partenaire</a></li>
 				</ul>
 				<img class='menu' src="<?php echo $adjust_url; ?>images/menu-burger.png" alt="ouvrir le menu" onclick="openMenu()">
 			</nav>

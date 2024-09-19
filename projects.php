@@ -30,7 +30,34 @@ if(!@$_GET['project']){ ?>
   </div>
 </section>
 <?php
-}else{ ?> <img src="../photo/<?php echo $screen; ?>" alt="<?php echo $alt; ?>">
+}else{ ?> 
+
+
+
+
+
+
+
+
+<section>
+  <h2><?php echo $h2; ?></h2>
+  <article>
+    <h3><?php echo $h3; ?></h3>
+    <figure class='screen'><img src="../photo/<?php echo $screen; ?>" alt="<?php echo $alt; ?>"></figure>
+    <p class='text'><?php echo $description; ?></p>
+    </article>
+    <div style="clear: both;"></div>
+
+
+
+
+
+
+
+
+
+
+
 <?php } ?>
 </main>
 <?php
