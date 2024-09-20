@@ -1,6 +1,12 @@
 <?php
-$request_url=$_SERVER['REQUEST_URI'];
-if(strstr($request_url,'.php')){include'404.php';}
+if(strstr($_SERVER['REQUEST_URI'],'.php')){include'404.php';
+}elseifif(strstr($_SERVER['REQUEST_URI'],'?')){
+	$new_url=preg_replace('#\?.*#','',$_SERVER['REQUEST_URI']);
+	header("Status: 301 Moved Permanently", false, 301);
+	header("Location: $new_url");
+	exit();
+}else{$request_url=$_SERVER['REQUEST_URI'];}
+
 if($request_url==='/index.html'){ 
 	header("Status: 301 Moved Permanently", false, 301);
 	header("Location: ./");
@@ -15,14 +21,6 @@ if($request_url==='/projects.html'){
 if($request_url==='/projects/'){
 	header("Status: 301 Moved Permanently", false, 301);
 	header("Location: ../projects");
-	exit();
-
-}
-
-if(strstr($request_url,'?')){
-	$new_url=preg_replace('#\?.*#','',$request_url);
-	header("Status: 301 Moved Permanently", false, 301);
-	header("Location: $new_url");
 	exit();
 }
 

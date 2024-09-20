@@ -1,6 +1,7 @@
 <?php
 require './php/security.php';
 $page_title = str_replace(['/','-l-','-','.html'],['',' l&apos;',' ',''],$request_url);
+if($page_title==='partner'){$page_title='Partenaire';}
 if($page_title==='projects'){$page_title='Projets';}
 if(@$_GET['project']){$page_title=str_replace('projects','projet ',$page_title);}
 if($adjust_url===''){$adjust_url='../';}
@@ -36,7 +37,7 @@ if($real_url==='/index.php'){$page_title='Hakim AZIZI';}
 					<li><a href='<?php echo $adjust_url; ?>projects.html'>Projets</a></li>
 					<li><a href='<?php echo $adjust_url; ?>collaboration.html'>Collaboration</a></li>
 					<li><a href='<?php echo $adjust_url; ?>contact.html'>Contact</a></li>
-					<li><a href='<?php echo $adjust_url; ?>partenaire.html'>Partenaire</a></li>
+					<li><a href='<?php echo $adjust_url; ?>partner.html'>Partenaire</a></li>
 				</ul>
 				<img class='menu' src="<?php echo $adjust_url; ?>images/menu-burger.png" alt="ouvrir le menu" onclick="openMenu()">
 			</nav>

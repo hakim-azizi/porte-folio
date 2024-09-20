@@ -31,14 +31,6 @@ if(!@$_GET['project']){ ?>
 </section>
 <?php
 }else{ ?> 
-
-
-
-
-
-
-
-
 <section>
   <h2><?php echo $h2; ?></h2>
   <article>
@@ -47,17 +39,6 @@ if(!@$_GET['project']){ ?>
     <p class='text'><?php echo $description; ?></p>
     </article>
     <div style="clear: both;"></div>
-
-
-
-
-
-
-
-
-
-
-
 <?php } ?>
 </main>
 <?php

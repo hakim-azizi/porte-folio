@@ -1,20 +1,18 @@
-.content2 {
-    overflow: hidden;
+figure>a>img {
+    height: auto;
+    width: 100%;
 }
 
-#resize {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2%;
-    width: 304%;
+.content1 {
+    width:100% !important;
 }
 
-.slide {
-    width: 32%;
-    display:block;
+.content > article > figure {
+    float:left;
+    width:33%;
 }
 
-.slide>img{
+.content > article > figure > img {
     width:100%;
-    height:auto;
+    height: auto;
 }
