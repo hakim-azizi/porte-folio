@@ -30,8 +30,8 @@ Header set Cache-Control "max-age=2592000, public"
 </IfModule>
 RewriteEngine On
 
-RewriteRule ^([a-z\-]+)\.html$ /$1.php [QSA,L]
-RewriteRule ^traitement/([a-z\-]+)\.html$ /php/$1.php [QSA,L]
+RewriteRule ^([a-z0-9\-]+)\.html$ /$1.php [QSA,L]
+RewriteRule ^traitement/([a-z0-9\-]+)\.html$ /php/$1.php [QSA,L]
 RewriteRule ^projects/([a-z0-9\-]+)\.html$ /projects.php?project=$1 [QSA,L]
 RewriteRule ^projects/$ /projects.php
 RewriteRule ^projects$ /projects.php

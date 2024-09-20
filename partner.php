@@ -3,7 +3,7 @@ require 'template/header.php';
 ?>
         <main>
             <section>
-                <h2>Retouvez sur cette page tous les sites partenaires</h2>
+                <h2>Retrouvez sur cette page tous nos partenaires</h2>
                 <article>
                     <h3><a href="http://site-1.com">site 1</a></h3>
                     <p>Brève description du site 1</p>

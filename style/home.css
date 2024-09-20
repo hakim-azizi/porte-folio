@@ -5,17 +5,17 @@ div {
 }
 
 figure {
-	display: flex;
+    display: flex;
     flex-wrap: nowrap;
     gap: 2%;
 }
 figure>a {
-    width: 23.5%;
-    min-width: 250px;
+    width: 15%;
+    min-width: 0;
 }
 
 figure>a>img {
     height: auto;
     width: 100%;
-    min-width: 300px;
+    min-width: 0;
 }
