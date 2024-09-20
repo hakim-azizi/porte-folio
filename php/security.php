@@ -1,6 +1,6 @@
 <?php
 if(strstr($_SERVER['REQUEST_URI'],'.php')){include'404.php';
-}elseifif(strstr($_SERVER['REQUEST_URI'],'?')){
+}elseif(strstr($_SERVER['REQUEST_URI'],'?')){
 	$new_url=preg_replace('#\?.*#','',$_SERVER['REQUEST_URI']);
 	header("Status: 301 Moved Permanently", false, 301);
 	header("Location: $new_url");
