@@ -12,8 +12,10 @@
 
 body {
 	background: var(--dark-color);
-	background-repeat: no-repeat;
-	background-size: cover;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
 }
 
 a {
@@ -21,7 +23,7 @@ a {
 	text-decoration: none;
 }
 
-.header>nav{
+.navbar>nav{
 	position: fixed;
 	top:0;
 	left:0;
@@ -33,7 +35,7 @@ a {
 	height:2rem;
 }
 
-.header>nav>ul {
+.navbar>nav>ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
@@ -41,15 +43,15 @@ a {
 	gap: 1rem;
 }
 
-.header>nav>p,
-.header>nav>ul>li {
+.navbar>nav>p,
+.navbar>nav>ul>li {
 	text-align: center;
 	list-style: none;
 	width: 100px;
 }
 
-.header>nav>p>a,
-.header>nav>ul>li>a {
+.navbar>nav>p>a,
+.navbar>nav>ul>li>a {
 	font-weight: bold;
 	color: var(--dark-color);
 	margin-top: auto;
@@ -61,7 +63,7 @@ a {
 }
 
 @media (max-width: 700px){
-	.header>nav>ul {
+	.navbar>nav>ul {
 		display:none;
 		position:fixed;
 		top: 2rem;
