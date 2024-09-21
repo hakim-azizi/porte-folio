@@ -2,7 +2,8 @@
 include 'template/header.php'; ?>
 <main>
 <?php
-if(!@$_GET['project']){ ?>
+// if(!@$_GET['project']){
+if($valide===0){ ?>
 
 <section>
   <h2>Projets de Développement Web : Backend, Frontend et APIs</h2>

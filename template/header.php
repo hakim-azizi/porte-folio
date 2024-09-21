@@ -29,7 +29,7 @@ if($real_url==='/index.php'){$page_title='Hakim AZIZI';}
 <?php } ?>
 	</head>
 	<body>
-		<header class='header'>
+		<header class='navbar'>
 			<nav>
 				<p><a href='<?php echo $adjust_url; ?>'>Accueil</a></p>
 				<ul id='show-menu'>
