@@ -33,6 +33,8 @@ if($real_url==='/index.php'){$page_title='Hakim AZIZI';}
 			<nav>
 				<p><a href='<?php echo $adjust_url; ?>'>Accueil</a></p>
 				<ul id='show-menu'>
+					<li><a href='<?php echo $adjust_url; ?>web-developer.html'>d&eacute;veloppeur web</a></li>
+					<li><a href='<?php echo $adjust_url; ?>cv-hakim-azizi.pdf'>CV</a></li>
 					<li><a href='<?php echo $adjust_url; ?>portefolio.html'>Portefolio</a></li>
 					<li><a href='<?php echo $adjust_url; ?>projects.html'>Projets</a></li>
 					<li><a href='<?php echo $adjust_url; ?>collaboration.html'>Collaboration</a></li>
