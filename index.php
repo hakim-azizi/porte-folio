@@ -1,28 +1,15 @@
 <?php 
-$picture = scandir('./photo');
-$lenght_array = count($picture);
-$number_picture=0;
-$array_picture=[];
-for($i=0;$i<$lenght_array;$i++){
-	if(strstr($picture[$i],'.jpg')){
-		$number_picture++;
-		array_push($array_picture,$picture[$i]);
-	}
-}
 require "template/header.php"; ?>
-<div><figure>
-<?php
-for($i=0;$i<$number_picture;$i++){
-?>
-<a href='projects/<?php echo str_replace('.jpg','.html',$array_picture[$i]); ?>'><img src='photo/<?php echo $array_picture[$i]; ?>' alt=''></a>
-<?php
-}
-?>
-</figure></div>
             <main class='content'>
-              <section>
-                  <h2> Mon parcours vers le d&eacute;veloppement web</h2> 
-                  <article>
+                <section>
+                  <h2> Mon parcours vers le d&eacute;veloppement web</h2>
+                  <div>
+                    <aside>
+                        <figure>
+                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660[409].JPG' alt='' width='250px' height='auto'>
+                        </figure>
+                    </aside>
+                    <article>
                       <h3>Formation d&eacute;vellopeur web</h3>
                       <p>
                           J'ai suivi une formation Bootcamp, chez la Wild Code School, en tant que <strong>d&eacute;veloppeur
@@ -47,6 +34,7 @@ for($i=0;$i<$number_picture;$i++){
                           d&apos;en acqu&eacute;rir d&apos;autres que je mettrais &agrave; votre service.
                       </p>
                   </article>
+                  </div>
               </section>
         </main>
 <?php require "template/footer.php"; ?>
