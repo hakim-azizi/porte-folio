@@ -24,6 +24,7 @@ if($result===17){$validate='dix-sept';}
 if($result===18){$validate='dix-huit';}
 if($result===19){$validate='dix-neuf';}
 if($result===20){$validate='vingt';}
+if(!@$validate){echo'Je suis désolé,une erreur c&apos;est produite.<br>Veuillez actualiser la page.<br>MERCI';exit();}
 $_SESSION['validate']=md5($validate);
 $response=@$_SESSION['response'];
 include 'template/header.php';

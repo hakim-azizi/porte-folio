@@ -1,21 +1,10 @@
-div {
-    margin-left: 4%;
-    width: 92%;
-    overflow: hidden;
+aside {
+    float:left;
+    margin:  0 1rem  0 1rem ;
 }
 
-figure {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2%;
-}
-figure>a {
-    width: 15%;
-    min-width: 0;
-}
-
-figure>a>img {
+aside > figure > img {
+    border-radius: 1rem;
+    width: 250px;
     height: auto;
-    width: 100%;
-    min-width: 0;
 }

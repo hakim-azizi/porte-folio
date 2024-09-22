@@ -1,5 +1,24 @@
+<?php 
+$picture = scandir('./photo');
+$lenght_array = count($picture);
+$number_picture=0;
+$array_picture=[];
+for($i=0;$i<$lenght_array;$i++){
+	if(strstr($picture[$i],'.jpg')){
+		$number_picture++;
+		array_push($array_picture,$picture[$i]);
+	}
+}
+require "template/header.php"; ?>
+<div><figure>
 <?php
-include 'template/header.php'; ?>
+for($i=0;$i<$number_picture;$i++){
+?>
+<a href='projects/<?php echo str_replace('.jpg','.html',$array_picture[$i]); ?>'><img src='photo/<?php echo $array_picture[$i]; ?>' alt=''></a>
+<?php
+}
+?>
+</figure></div>
 <main>
 <?php
 // if(!@$_GET['project']){
