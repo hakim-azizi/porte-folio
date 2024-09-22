@@ -4,7 +4,6 @@ include 'template/header.php'; ?>
 <?php
 // if(!@$_GET['project']){
 if($valide===0){ ?>
-
 <section>
   <h2>Projets de Développement Web : Backend, Frontend et APIs</h2>
   <div  class='content'>
@@ -30,6 +29,23 @@ if($valide===0){ ?>
   </article>
   </div>
 </section>
+<section>
+                <h2><a href="/projects.html">Projets</a></h2>
+                <div  class='content'>
+                <article>
+                  <h3>Mes projets en tant que développeur web</h3>
+                  <p>
+                    En tant que <strong>développeur web</strong>, chaque <em>projet</em> est une occasion de relever de <strong>nouveaux défis techniques</strong>. Je m'assure de toujours proposer des <em>solutions adaptées aux besoins des clients</em>, tout en garantissant des <strong>performances optimales</strong>.
+                  </p>
+                  <p>
+                    Mon expertise dans le <em>développement web</em> se reflète à travers les différents <em><a href="/portefolio.html">projets présentés dans mon portefolio</a></em>. Vous pourrez y explorer mes réalisations.
+                  </p>
+                  <p>
+                    Si vous souhaitez en savoir plus sur mes compétences de <strong><a href="web-developer.html">développeur web</a></strong> et voir comment je peux vous aider à <em>mener à bien votre projet</em>, n'hésitez pas à consulter les autres sections de mon site.
+                  </p>
+                </article>
+                </div>
+            </section>
 <?php
 }else{ ?> 
 <section>
