@@ -17,6 +17,16 @@
 						open=0;
 					}
 				};
+				let openProject=0;
+				function openProjects(){
+					if(openProject===0){
+						document.querySelector('#projects').style.display="block";
+						openProject=1;
+					}else{
+						document.querySelector('#projects').style.display="none";
+						openProject=0;
+					}
+				};
 			</script>
     </body>
 </html>
