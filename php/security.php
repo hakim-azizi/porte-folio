@@ -25,8 +25,8 @@ if($_SERVER['REQUEST_URI']==='/projects.html'){
 	exit();
 }
 
-if($_SERVER['REQUEST_URI']==='/projects'){ 
-	$title="projet";
+if($_SERVER['PHP_SELF']==='/index.php'){
+	$title="Hakim AZIZI";
 }
 
 if($_SERVER['REQUEST_URI']==='/collaboration.html'){
@@ -49,26 +49,45 @@ if($_SERVER['REQUEST_URI']==='/portefolio.html'){
 	$title="portefolio";
 }
 
-if($_SERVER['REQUEST_URI']==='/projects.html'){
-	$title="projets";
-}
-
 if($_SERVER['REQUEST_URI']==='/web-developer.html'){
 	$title="d&eacute;veloppeur web";
 }
 
-if($_SERVER['PHP_SELF']==='/index.php'){
-	$title="Hakim AZIZI";
+if($_SERVER['REQUEST_URI']==='/projects'){ 
+	$title="projets";
+}
+
+if($_SERVER['REQUEST_URI']==='/projects/afac974.html'){ 
+	$title="projet AFAC974";
+}
+
+if($_SERVER['REQUEST_URI']==='/projects/carte-postale.html'){ 
+	$title="projet cr&eacute;ation de carte postale";
+}
+
+if($_SERVER['REQUEST_URI']==='/projects/faketory.html'){ 
+	$title="projet Faketory";
+}
+
+if($_SERVER['REQUEST_URI']==='/projects/la-rose-de-l-orient.html'){ 
+	$title="projet la Rose de l&apos;Orient";
+}
+
+if($_SERVER['REQUEST_URI']==='/projects/robe-et-vetement.html'){ 
+	$title="projet Robe et V&ecirc;tement";
+}
+
+if($_SERVER['REQUEST_URI']==='/projects/the-wild-fork.html'){ 
+	$title="projet THE Wild FORK";
 }
 
 $adjust_url=preg_replace(array("@(^[/]{1})@","@([A-Za-z0-9:_\=\&\.\?\+\%\-])@","@/@"),array("","","../"),$_SERVER['REQUEST_URI']);
 
-// if($_GET['project']){
- require 'database.php';
-$remplacementduget=str_replace(['/projects/','.html'],'',$request_url);
+	require 'database.php';
+$remplacementduget=str_replace(['/projects/','.html'],'',$_SERVER['REQUEST_URI']);
 $data_projet=mysqli_query($connectionbd,"SELECT * FROM `project` WHERE `name`='".$remplacementduget."'");
-$data_projet=mysqli_query($connectionbd,"SELECT * FROM `project` WHERE `name`='".$_GET['project']."'");
+// $data_projet=mysqli_query($connectionbd,"SELECT * FROM `project` WHERE `name`='".$_GET['project']."'");
 $project=mysqli_fetch_array($data_projet);
-if(!$project['name']){/* require '404.php'; */ $valide=0;}else{extract($project);$valide=1;}
-// }
+if(!@$project['name']){/* require '404.php'; */ $valide=0;}else{extract($project);$valide=1;}
+$data_projects=mysqli_query($connectionbd,"SELECT * FROM `project`");
 ?>

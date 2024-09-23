@@ -33,7 +33,17 @@ require './php/security.php';
 					<li><a href='../web-developer.html'>d&eacute;veloppeur web</a></li>
 					<li><a href='../cv-hakim-azizi.pdf'>CV</a></li>
 					<li><a href='../portefolio.html'>Portefolio</a></li>
-					<li><a href='../projects.html'>Projets</a></li>
+					<li id='show-projects'  onclick="openProjects()">Voir les projets
+					<ul id='projects'>
+					<?php 
+						while($projects=mysqli_fetch_array($data_projects)){
+							?>
+							<li><?php echo $projects['name']; ?></li>
+						<?php
+						}
+						?>
+					</ul>				
+				</li>
 					<li><a href='../collaboration.html'>Collaboration</a></li>
 					<li><a href='../contact.html'>Contact</a></li>
 					<li><a href='../partner.html'>Partenaire</a></li>
