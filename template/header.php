@@ -11,15 +11,18 @@ require './php/security.php';
 		<meta name='contactstate' content='France'>
 		<meta name='contactcity' content='Nantes'>
 		<meta name='language' content='fr'>
-		<link href="<?php echo $adjust_url; ?>style/style.css" rel="stylesheet" type="text/css">
+		<link href="../style/style.css" rel="stylesheet" type="text/css">
+		<?php if($title==="Hakim AZIZI" OR $title==="d&eacute;veloppeur web" OR $title==="contact" OR $title==="partenaire"){  ?>
+		<link href="style/headband.css" rel="stylesheet" type="text/css">
+<?php }  ?>
 <?php if($title==='contact'){ ?>
-	<link href="style/contact.css" rel="stylesheet" type="text/css">
+		<link href="style/contact.css" rel="stylesheet" type="text/css">
 <?php } ?>
 <?php if($title==='portefolio'){ ?>
-	<link href="style/portefolio.css" rel="stylesheet" type="text/css">
+		<link href="style/portefolio.css" rel="stylesheet" type="text/css">
 <?php } ?>
 <?php if($title==='projets'){ ?>
-	<link href="style/projects.css" rel="stylesheet" type="text/css">
+		<link href="style/projects.css" rel="stylesheet" type="text/css">
 <?php } ?>
 	</head>
 	<body>
@@ -30,7 +33,7 @@ require './php/security.php';
 					<li><a href='../web-developer.html' <?php if($title==="d&eacute;veloppeur web"){ ?>class='current'<?php } ?>>d&eacute;veloppeur web</a></li>
 					<li><a href='../cv-hakim-azizi.html' <?php if($title==="CV Hakim AZIZI"){ ?>class='current'<?php } ?>>CV</a></li>
 					<li><a href='../portefolio.html' <?php if($title==="portefolio"){ ?>class='current'<?php } ?>>Portefolio</a></li>
-					<li id='show-projects' onclick="openProjects()"><span <?php if(strstr($title,'projet')){ ?>class='current'<?php } ?>>Voir les projets</span>
+					<li id='show-projects' onclick="openProjects()"><span <?php if(strstr($title,'projet ')){ ?>class='current'<?php } ?>>Voir les projets</span>
 					<ul id='projects'>
 					<?php 
 						while($projects=mysqli_fetch_array($data_projects)){

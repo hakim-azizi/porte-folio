@@ -1,5 +1,6 @@
 <?php
 require 'template/header.php';
+require 'template/headband.php';
 ?>
         <main>
             <section>
