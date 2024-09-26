@@ -214,25 +214,3 @@ aside > figure > img {
     width: 250px;
     height: auto;
 }
-
-.headband {
-    margin-left: 4%;
-    width: 92%;
-    overflow: hidden;
-}
-
-.headband>figure {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2%;
-}
-.headband>figure>a {
-    width: 15%;
-    min-width: 0;
-}
-
-.headband>figure>a>img {
-    height: auto;
-    width: 100%;
-    min-width: 0;
-}

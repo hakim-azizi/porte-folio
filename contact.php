@@ -27,14 +27,15 @@ if($result===20){$validate='vingt';}
 if(!@$validate){echo'Je suis désolé,une erreur c&apos;est produite.<br>Veuillez actualiser la page.<br>MERCI';exit();}
 $_SESSION['validate']=md5($validate);
 $response=@$_SESSION['response'];
-include 'template/header.php';
+require 'template/header.php';
+require 'template/headband.php';
 ?>
             <main>
                 <section>
                     <h2>Me contacter par t&eacute;l&eacute;phone</h2>
-                    <p><a href="tel:+3366419734">06 66 41 97 34</a></p>
+                    <p><a href='tel:+3366419734'>06 66 41 97 34</a></p>
                     <h2>Me contacter par sms</h2>
-                    <p><a href="sms:+3366419734">06 66 41 97 34</a></p>
+                    <p><a href='sms:+3366419734'>06 66 41 97 34</a></p>
                     <h2>Me contacter par Whatsapp</h2>
                     <p><a href='https://api.whatsapp.com/send?phone=330666419734&text=Bonjour'>Whatsapp</a></p>
                     <h2>Me contacter par voie postale</h2>
