@@ -2,6 +2,12 @@
 		<main class='content'>
 		<section>
                 <h2><a href="/portefolio.html">Portefolio</a></h2>
+				<div>
+                <aside>
+                        <figure>
+                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.JPG' alt='d&eacute;veloppeur web hakim AZIZI' width='250px' height='auto'>
+                        </figure>
+                    </aside>
                 <article>
                   <h3>Découvrez mon portefolio de développeur web</h3>
                   <p>
@@ -14,6 +20,7 @@
                     Si vous souhaitez en savoir plus sur <em>mon parcours en tant que développeur web</em>, n'hésitez pas à visiter ma page dédiée à mon rôle de <strong><a href="./">développeur web</a></strong>, où j'explique en détail mes compétences et mon approche du <em>développement web</em>.
                   </p>
                 </article>
+				</div>
               </section>
 			<section class='content1'>
 				<h2><a href='projects.html'>Projets</a> :</h2>

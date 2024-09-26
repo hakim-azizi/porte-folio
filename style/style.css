@@ -35,6 +35,10 @@ a {
 	height:3rem;
 }
 
+.current{
+	color: var(--dark-color) !important;
+}
+
 .navbar>nav>ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -53,15 +57,23 @@ a {
 
 .navbar>nav>p>a,
 .navbar>nav>ul>li>a,
-#show-projects,
+#show-projects>span,
 #show-projects>ul>li {
 	font-weight: bold;
-	color: var(--dark-color);
+	color: var(--link-color);
 	margin-top: auto;
 	margin-bottom: auto;
 }
 
+#show-projects>span {
+	cursor: pointer;
+}
 
+#projects{
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem 0;
+}
 
 .navbar>nav>ul>li>ul{
 	display:none;
@@ -71,17 +83,22 @@ a {
 	display: none;
 }
 
-@media (min-width: 801px){
+@media (min-width: 901px){
+	.navbar>nav>ul {
+		display:flex;
+	}
+
 	#projects{
 		background: var(--light-color);
 		position: fixed;
 		top: 3rem;
-			}
+	}
 	#projects>li{
 		width: 250px;
+	}
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
 	.navbar>nav>ul {
 		display:none;
 		position:fixed;
@@ -185,4 +202,37 @@ width:30%;
 .text {
 	width:100%;
 	min-width: 300px;
+}
+
+aside {
+    float:left;
+    margin:  0 1rem  0 1rem ;
+}
+
+aside > figure > img {
+    border-radius: 1rem;
+    width: 250px;
+    height: auto;
+}
+
+.headband {
+    margin-left: 4%;
+    width: 92%;
+    overflow: hidden;
+}
+
+.headband>figure {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2%;
+}
+.headband>figure>a {
+    width: 15%;
+    min-width: 0;
+}
+
+.headband>figure>a>img {
+    height: auto;
+    width: 100%;
+    min-width: 0;
 }

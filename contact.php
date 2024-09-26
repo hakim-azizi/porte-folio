@@ -35,8 +35,8 @@ include 'template/header.php';
                     <p><a href="tel:+3366419734">06 66 41 97 34</a></p>
                     <h2>Me contacter par sms</h2>
                     <p><a href="sms:+3366419734">06 66 41 97 34</a></p>
-                    <h2>Me contacter par what's up</h2>
-                    <p><a href='https://api.whatsapp.com/send?phone=330666419734&text=Bonjour'>What's up</a></p>
+                    <h2>Me contacter par Whatsapp</h2>
+                    <p><a href='https://api.whatsapp.com/send?phone=330666419734&text=Bonjour'>Whatsapp</a></p>
                     <h2>Me contacter par voie postale</h2>
                     <address>1 avenue Jean Vigo<br>44300 Nantes</address>
                 </section>

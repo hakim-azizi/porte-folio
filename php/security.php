@@ -3,7 +3,7 @@ if(strstr($_SERVER['REQUEST_URI'],'.php')){include'404.php';
 }elseif(strstr($_SERVER['REQUEST_URI'],'?')){
 	$new_url=preg_replace('#\?.*#','',$_SERVER['REQUEST_URI']);
 	header("Status: 301 Moved Permanently", false, 301);
-	header("Location: $new_url");
+	header("Location: $new_url".$_SERVER['REQUEST_URI']);
 	exit();
 }
 
@@ -34,11 +34,11 @@ if($_SERVER['REQUEST_URI']==='/collaboration.html'){
 }
 
 if($_SERVER['REQUEST_URI']==='/contact.html'){
-	$title="collaboration";
+	$title="contact";
 }
 
-if($_SERVER['REQUEST_URI']==='/cv.html'){
-	$title="cv";
+if($_SERVER['REQUEST_URI']==='/cv-hakim-azizi.html'){
+	$title="CV Hakim AZIZI";
 }
 
 if($_SERVER['REQUEST_URI']==='/partner.html'){

@@ -20,7 +20,7 @@
 				let openProject=0;
 				function openProjects(){
 					if(openProject===0){
-						document.querySelector('#projects').style.display="block";
+						document.querySelector('#projects').style.display="flex";
 						openProject=1;
 					}else{
 						document.querySelector('#projects').style.display="none";
