@@ -45,8 +45,8 @@ if($_SERVER['REQUEST_URI']==='/partner.html'){
 	$title='partenaire';
 }
 
-if($_SERVER['REQUEST_URI']==='/portefolio.html'){
-	$title='portefolio';
+if($_SERVER['REQUEST_URI']==='/portfolio.html'){
+	$title='portfolio';
 }
 
 if($_SERVER['REQUEST_URI']==='/web-developer.html'){
