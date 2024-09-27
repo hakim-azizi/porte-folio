@@ -39,30 +39,30 @@ require 'template/headband.php';
                     <h2>Me contacter par Whatsapp</h2>
                     <p><a href='https://api.whatsapp.com/send?phone=330666419734&text=Bonjour'>Whatsapp</a></p>
                     <h2>Me contacter par voie postale</h2>
-                    <address>1 avenue Jean Vigo<br>44300 Nantes</address>
+                    <address>M. Hakim AZIZI<br>1 avenue Jean Vigo<br>44300 Nantes</address>
                 </section>
             </main>
             <div class='response'><?php echo $response; ?></div>
             <form action='traitement/contact-processing.html' method='post'>
-                <label>
+                <label>Votre Nom :
                     <input type='text' name='name' placeholder='Nom Pr&eacute;nom' required>
                 </label>
-                <label>
+                <label>Votre adresse mail :
                     <input type='email' name='email' placeholder='votreadresse@mail.com' required>
                 </label>
-                <label>
+                <label>Votre numéro de téléphone :
                     <input type='tel' name='tel' placeholder='+33123456789'>
                 </label>
-                <label>
+                <label>Sujet de votre message
                     <input type='text' name='subject' placeholder='Objet du message' required>
                 </label>
-                <label>
+                <label>Message :
                     <textarea name='message' placeholder='Entrez votre message' required></textarea>
                 </label>
                 <label>Combien font <?php echo $number1.'+'.$number2; ?> le resultat en lettre.<br>
                     <input type='text' name='boat' placeholder='Entrez la r&eacute;ponse' required>
                 </label>
-                <label>
+                <label style='display:none'>
                     <input type='hidden' name='boat1' placeholder='Entrez une nouvelle fois la r&eacute;ponse'>
                 </label>
                 <label class='adjust'>

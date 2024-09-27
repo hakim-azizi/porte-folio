@@ -18,8 +18,8 @@ require './php/security.php';
 <?php if($title==='contact'){ ?>
 		<link href="style/contact.css" rel="stylesheet" type="text/css">
 <?php } ?>
-<?php if($title==='portefolio'){ ?>
-		<link href="style/portefolio.css" rel="stylesheet" type="text/css">
+<?php if($title==='portfolio'){ ?>
+		<link href="style/portfolio.css" rel="stylesheet" type="text/css">
 <?php } ?>
 <?php if($title==='projets'){ ?>
 		<link href="style/projects.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@ require './php/security.php';
 				<ul id='show-menu'>
 					<li><a href='../web-developer.html' <?php if($title==="d&eacute;veloppeur web"){ ?>class='current'<?php } ?>>d&eacute;veloppeur web</a></li>
 					<li><a href='../cv-hakim-azizi.html' <?php if($title==="CV Hakim AZIZI"){ ?>class='current'<?php } ?>>CV</a></li>
-					<li><a href='../portefolio.html' <?php if($title==="portefolio"){ ?>class='current'<?php } ?>>Portefolio</a></li>
+					<li><a href='../portfolio.html' <?php if($title==="portfolio"){ ?>class='current'<?php } ?>>Portfolio</a></li>
 					<li id='show-projects' onclick="openProjects()"><span <?php if(strstr($title,'projet ')){ ?>class='current'<?php } ?>>Voir les projets</span>
 					<ul id='projects'>
 					<?php 

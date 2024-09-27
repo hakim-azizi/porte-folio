@@ -13,29 +13,38 @@ form {
 }
 
 label {
-	width: 250px;
+	width: 50%;
+	min-width: 300px;
+	border-bottom: 1px solid var(--light-color);
+	margin-bottom: 1rem;
 }
 
 input,
 textarea {
-	background: var(--light-color);
-	color: var(--dark-color);
+	background: var(--dark-color);
+	color: var(--light-color);
 	border: none;
-	
+	width: 100%;
+}
+
+input:focus,
+textarea:focus{
+    border: none;
+	outline:  none;
 }
 
 button {
 	background: var(--dark-color);
 	color: var(--light-color);
 	border: 1px solid var(--light-color);
+	border-radius: 51px;
+	width: 300px;
 }
 
 input,
 textarea,
 button {
 	padding: .2rem .5rem;
-	width: 250px;
-	border-radius: 51px;
 }
 
 .adjust {
