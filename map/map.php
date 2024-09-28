@@ -1,5 +1,9 @@
 <?php echo"<?xml"; ?> version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+		<loc>https://web-developer-nantes.com</loc>
+		<lastmod><?php echo date("Y-m-d"); ?></lastmod>
+	</url>
 <?php
 $page = scandir('../');
 $lenght_array = count($page);
@@ -8,10 +12,10 @@ $array_page=[];
 for($i=0;$i<$lenght_array;$i++){
 	if(strstr($page[$i],'.php')){
 		$show_page=str_replace('.php','.html',$page[$i]);
-		$show_page=str_replace('projects.html','projects',$page[$i]);	
+		$show_page=str_replace('projects.html','projects',$show_page);		
 		$number_page++; ?>
 	<url>
-		<loc>https://url-du-site.com/<?php echo $show_page; ?></loc>
+		<loc>https://web-developer-nantes.com/<?php echo $show_page; ?></loc>
 		<lastmod><?php echo date("Y-m-d"); ?></lastmod>
 	</url>
 <?php
@@ -27,7 +31,7 @@ for($i=0;$i<$lenght_array;$i++){
 		$number_project++;
 		?>
 	<url>
-		<loc>https://www.example.com/projects/<?php echo $show_project; ?></loc>
+		<loc>https://web-developer-nantes.com/<?php echo $show_project; ?></loc>
 		<lastmod><?php echo date("Y-m-d"); ?></lastmod>
 	</url>
 <?php
