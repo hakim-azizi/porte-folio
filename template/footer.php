@@ -1,6 +1,6 @@
 		<footer class='header-footer'>
 			<nav class='footer'>
-				<p>Desingned by Hakim AZIZI<br>
+				<p>Designed by Hakim AZIZI<br>
 					&copy; All rights reserved</p>
 			</nav>
 		</footer>
