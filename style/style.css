@@ -83,7 +83,7 @@ a {
 	display: none;
 }
 
-@media (min-width: 901px){
+@media (min-width: 921px){
 	.navbar>nav>ul {
 		display:flex;
 	}
@@ -98,7 +98,7 @@ a {
 	}
 }
 
-@media (max-width: 900px){
+@media (max-width: 920px){
 	.navbar>nav>ul {
 		display:none;
 		position:fixed;
@@ -194,7 +194,7 @@ width:30%;
 	width:49%;
 }
 
-.screen>img,
+.screen>a>img,
 .alignment>img{
 	width:100%;
 }

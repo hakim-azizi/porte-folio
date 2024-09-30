@@ -4,8 +4,8 @@ require './php/security.php';
 <html lang='fr'>
 	<head>
 		<title>D&eacute;veloppeur web<?php if($title!=='d&eacute;veloppeur web'){ echo ' : '.$title; } ?></title>
-		<meta name='Description' content=''>
-		<meta name='Keywords' content=''>
+		<meta name='Description' content='<?php echo $description; ?>'>
+		<meta name='Keywords' content='<?php echo $keywords; ?>'>
 		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<meta name='contactstate' content='France'>
@@ -30,7 +30,7 @@ require './php/security.php';
 			<nav>
 				<p><a href='../' <?php if($title==="Hakim AZIZI"){ ?>class='current'<?php } ?>>Accueil</a></p>
 				<ul id='show-menu'>
-					<li><a href='../web-developer.html' <?php if($title==="d&eacute;veloppeur web"){ ?>class='current'<?php } ?>>d&eacute;veloppeur web</a></li>
+					<li><a href='../web-developer.html' <?php if($title==="d&eacute;veloppeur web"){ ?>class='current'<?php } ?>>D&eacute;veloppeur web</a></li>
 					<li><a href='../cv-hakim-azizi.html' <?php if($title==="CV Hakim AZIZI"){ ?>class='current'<?php } ?>>CV</a></li>
 					<li><a href='../portfolio.html' <?php if($title==="portfolio"){ ?>class='current'<?php } ?>>Portfolio</a></li>
 					<li id='show-projects' onclick="openProjects()"><span <?php if(strstr($title,'projet ')){ ?>class='current'<?php } ?>>Voir les projets</span>
@@ -38,7 +38,7 @@ require './php/security.php';
 					<?php 
 						while($projects=mysqli_fetch_array($data_projects)){
 							?>
-							<li><a href='../projects/<?php echo $projects['name']; ?>.html'<?php
+							<li><a href='../projects/<?php echo str_replace('.jpg','.html',$projects['screen']); ?>' <?php
 							if($title==='projet AFAC974'){ ?>class='current'<?php }
 							elseif($title==='projet cr&eacute;ation de carte postale'){ ?>class='current'<?php }
 							elseif($title==='projet Faketory'){ ?>class='current'<?php }

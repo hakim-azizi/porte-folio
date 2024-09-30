@@ -1,4 +1,6 @@
 <?php
+$description='';
+$keywords='';
 require 'template/header.php';
 require 'template/headband.php';
 ?>

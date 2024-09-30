@@ -10,7 +10,7 @@ $lenght_array = count($page);
 $number_page=0;
 $array_page=[];
 for($i=0;$i<$lenght_array;$i++){
-	if(strstr($page[$i],'.php')){
+	if(strstr($page[$i],'.php') AND !strstr($page[$i],'google')){
 		$show_page=str_replace('.php','.html',$page[$i]);
 		$show_page=str_replace('projects.html','projects',$show_page);		
 		$number_page++; ?>

@@ -1,4 +1,6 @@
 <?php
+$description='';
+$keywords='';
 include 'template/header.php';
 ?>
 <object type='application/pdf' data='cv-hakim-azizi.pdf' style='height:1189px'></object>
