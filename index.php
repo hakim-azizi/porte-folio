@@ -1,5 +1,5 @@
 <?php
-$description='';
+$description='Je me présente Hakim AZIZI, développeur web passionné au parcours atypique...';
 $keywords='';
 require 'template/header.php';
 require 'template/headband.php';
@@ -10,7 +10,7 @@ require 'template/headband.php';
                   <div>
                     <aside>
                         <figure>
-                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.JPG' alt='d&eacute;veloppeur web hakim AZIZI' width='250px' height='auto'>
+                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.webp' alt='d&eacute;veloppeur web hakim AZIZI'>
                         </figure>
                     </aside>
                   <article>

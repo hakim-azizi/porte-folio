@@ -48,7 +48,8 @@ if($valide===0){ ?>
     <h3><?php echo $project['title_project']; ?></h3>
     <figure class='alignment'><img src='photo/<?php echo $project['screen']; ?>' alt='<?php echo $project['alt']; ?>'></figure>
     <p class='text'><?php echo $project['description_project']; ?></p>
-    <p class='text'><a href'<?php echo $project['url']; ?>'>Tester le site</a></p>
+    <p class='text'><a href='<?php echo $project['url']; ?>'>Tester le site</a></p>
+    <picture><a href='<?php echo $project['github']; ?>' target='_blank'><img src='../images/github.png'></a></picture>
     </article>
 <?php } ?>
   </div>
@@ -62,6 +63,7 @@ if($valide===0){ ?>
     <figure class='screen'><a href="<?php echo $url; ?>" target="_blank"><img src='../photo/<?php echo $screen; ?>' alt='<?php echo $alt; ?>'></a></figure>
     <p class='text'><?php echo nl2br($description); ?></p>
     <p><a href="<?php echo $url; ?>" target="_blank">Tester le site</a></p>
+    <picture><a href='<?php echo $github; ?>' target='_blank'><img src='../images/github.png'></a></picture>
     </article>
     <div style='clear: both;'></div>
 <?php } ?>

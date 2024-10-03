@@ -2,7 +2,7 @@
 	margin-left: 4%;
 	width: 92%;
 	overflow: hidden;
-	height: 172px;
+	height: 145px;
 }
 
 .headband>figure {
@@ -11,11 +11,8 @@
 	flex-wrap: wrap;
 	gap: 2%;
 }
-.headband>figure>a {
-	width: 280px;
-}
 
 .headband>figure>a>img {
-	height: 172px;
-	width: 280px;
+	height: 145px;
+	width: 300px;
 }

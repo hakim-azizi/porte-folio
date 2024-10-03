@@ -26,8 +26,8 @@ $lenght_array = count($project);
 $number_project=0;
 $array_project=[];
 for($i=0;$i<$lenght_array;$i++){
-	if(strstr($project[$i],'.jpg')){
-		$show_project=str_replace('.jpg','.html',$project[$i]);
+	if(strstr($project[$i],'-thumbnail.webp')){
+		$show_project=str_replace('-thumbnail.webp','.html',$project[$i]);
 		$number_project++;
 		?>
 	<url>
