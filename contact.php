@@ -27,6 +27,8 @@ if($result===20){$validate='vingt';}
 if(!@$validate){echo'Je suis désolé,une erreur c&apos;est produite.<br>Veuillez actualiser la page.<br>MERCI';exit();}
 $_SESSION['validate']=md5($validate);
 $response=@$_SESSION['response'];
+$description='';
+$keywords='';
 require 'template/header.php';
 require 'template/headband.php';
 ?>

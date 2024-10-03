@@ -10,7 +10,7 @@ $lenght_array = count($page);
 $number_page=0;
 $array_page=[];
 for($i=0;$i<$lenght_array;$i++){
-	if(strstr($page[$i],'.php')){
+	if(strstr($page[$i],'.php') AND !strstr($page[$i],'google')){
 		$show_page=str_replace('.php','.html',$page[$i]);
 		$show_page=str_replace('projects.html','projects',$show_page);		
 		$number_page++; ?>
@@ -26,8 +26,8 @@ $lenght_array = count($project);
 $number_project=0;
 $array_project=[];
 for($i=0;$i<$lenght_array;$i++){
-	if(strstr($project[$i],'.jpg')){
-		$show_project=str_replace('.jpg','.html',$project[$i]);
+	if(strstr($project[$i],'-thumbnail.webp')){
+		$show_project=str_replace('-thumbnail.webp','.html',$project[$i]);
 		$number_project++;
 		?>
 	<url>

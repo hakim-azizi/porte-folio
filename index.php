@@ -1,4 +1,6 @@
 <?php
+$description='Je me présente Hakim AZIZI, développeur web passionné au parcours atypique...';
+$keywords='';
 require 'template/header.php';
 require 'template/headband.php';
 ?>
@@ -8,16 +10,9 @@ require 'template/headband.php';
                   <div>
                     <aside>
                         <figure>
-                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.JPG' alt='d&eacute;veloppeur web hakim AZIZI' width='250px' height='auto'>
+                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.webp' alt='d&eacute;veloppeur web hakim AZIZI'>
                         </figure>
                     </aside>
-                    <article>
-                      <h3>Formation d&eacute;vellopeur web</h3>
-                      <p>
-                          J&apos;ai suivi une formation Bootcamp, chez la Wild Code School, en tant que <strong>d&eacute;veloppeur
-                          web</strong>.
-                      </p>
-                  </article>
                   <article>
                       <h3>Mon parcours vers le m&eacute;tier de d&eacute;vellopeur web</h3>
                       <p>                        
@@ -30,6 +25,11 @@ require 'template/headband.php';
                             Ayant eu un accident du travail, suivi d&apos;un licenciement pour inaptitude professionnel (titulaire
                             d&apos;une RQTH), et cette premi&egrave;re exp&eacute;rience m&apos;ont naturellement conduit vers une
                             reconversion vers le <em>d&eacute;veloppement web</em>.
+                      </p>
+                      <h4>Formation d&eacute;vellopeur web</h3>
+                      <p>
+                          J&apos;ai suivi une formation Bootcamp, au sein de la Wild Code School, en tant que <strong>d&eacute;veloppeur
+                          web</strong>.
                       </p>
                       <p>
                             Je suis donc actuellement &agrave; la recherche d&apos;un poste en alternance <strong><a href='web-developer.html'>

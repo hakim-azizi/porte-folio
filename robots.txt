@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://url-du-site.com/map.xml
+Sitemap: https://web-developer-nantes.com/map.xml

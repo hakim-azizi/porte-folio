@@ -1,7 +1,7 @@
 :root{
-	--dark-color: #1E1E1E;
-	--light-color: #D4D4D4;
-	--link-color: #569CD6; 
+	--dark-color: #000;
+	--light-color:  #FFF;
+	--link-color:  #2086C9; 
 }
 
 * {
@@ -60,7 +60,7 @@ a {
 #show-projects>span,
 #show-projects>ul>li {
 	font-weight: bold;
-	color: var(--link-color);
+	color:  #1A66CC;
 	margin-top: auto;
 	margin-bottom: auto;
 }
@@ -83,7 +83,7 @@ a {
 	display: none;
 }
 
-@media (min-width: 901px){
+@media (min-width: 921px){
 	.navbar>nav>ul {
 		display:flex;
 	}
@@ -98,7 +98,7 @@ a {
 	}
 }
 
-@media (max-width: 900px){
+@media (max-width: 920px){
 	.navbar>nav>ul {
 		display:none;
 		position:fixed;
@@ -119,6 +119,8 @@ a {
 	.menu {
 		display: block;
 		margin-right: 1rem;
+		width:20px;
+		height:20px;
 	}
 
 }
@@ -194,7 +196,7 @@ width:30%;
 	width:49%;
 }
 
-.screen>img,
+.screen>a>img,
 .alignment>img{
 	width:100%;
 }
@@ -209,8 +211,8 @@ aside {
     margin:  0 1rem  0 1rem ;
 }
 
-aside > figure > img {
+aside>figure>img{
     border-radius: 1rem;
     width: 250px;
-    height: auto;
+    height: 333px;
 }
