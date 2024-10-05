@@ -1,1 +1,1 @@
-<?php require '404.php'; ?>
+<?php require '../php/404.php'; ?>
