@@ -1,5 +1,5 @@
 <?php
-$description='Je me présente Hakim AZIZI, développeur web passionné au parcours atypique...';
+$metat_description='Je me présente Hakim AZIZI, développeur web passionné au parcours atypique...';
 $keywords='';
 require 'template/header.php';
 require 'template/headband.php';
@@ -26,7 +26,6 @@ require 'template/headband.php';
                             d&apos;une RQTH), et cette premi&egrave;re exp&eacute;rience m&apos;ont naturellement conduit vers une
                             reconversion vers le <em>d&eacute;veloppement web</em>.
                       </p>
-                      <h4>Formation d&eacute;vellopeur web</h3>
                       <p>
                           J&apos;ai suivi une formation Bootcamp, au sein de la Wild Code School, en tant que <strong>d&eacute;veloppeur
                           web</strong>.

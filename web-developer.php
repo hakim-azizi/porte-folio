@@ -1,5 +1,5 @@
 <?php
-$description='';
+$metat_description='';
 $keywords='';
 require 'template/header.php';
 require 'template/headband.php';
@@ -10,19 +10,22 @@ require 'template/headband.php';
                 <div>
                 <aside>
                         <figure>
-                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.JPG' alt='d&eacute;veloppeur web hakim AZIZI' width='250px' height='auto'>
+                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.webp' alt='d&eacute;veloppeur web hakim AZIZI' width='250px' height='auto'>
                         </figure>
                     </aside>
                 <article>
-                  <h3>Mon expertise en tant que développeur web</h3>
+                  <h3>Je suis un <a href='./'>développeur web passionné</a>.</h3>
                   <p>
-                    En tant que <em>développeur web</em>, j'ai acquis une solide expertise dans la <em>création de sites internet performants</em> et adaptés aux <em>besoins spécifiques des clients</em>. Chaque <strong>projet</strong> que je réalise en tant que <em>développeur web</em> est conçu pour être à la fois <em>ergonomique</em> et <strong>optimisé pour les moteurs de recherche</strong>.
+                      Ma passion pour le <strong>développement</strong> m'a incité <em>à coder</em> un site de commerce électronique en autodidacte.<br>
+                      En utilisant <strong>PHP</strong> et <strong>SQL</strong> pour le <em>backend</em>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> et <strong>jQuery</strong> pour le <em>frontend</em>.<br>
+                      <em>Développer</em>, <em>maintenir à jours</em> et <em>déboguer</em>, la Rose de l'Orient, en respectant les <strong>normes de sécurité</strong> et la <strong>réglementation RGPD</strong>, m'ont permis d'acquérir une <b>grande autonomie<b></b> et une <b>certaine expérience</b> dans le métier de <strong>développeur web</strong>.
                   </p>
                   <p>
-                    <strong>Mon rôle de développeur web</strong> consiste à <em>créer des solutions</em> sur mesure en fonction des <em>objectifs de chaque client</em>. Je vous invite à découvrir quelques-unes de <strong>mes réalisations</strong> dans mon <strong><a href="/portfolio.html">portfolio</a></strong>, où vous trouverez des <em>projets variés</em>.
-                  </p>
-                  <p>
-                    Que ce soit pour un <strong>site vitrine ou une boutique en ligne</strong>, chaque <em><a href="/projects.html">projet</a></em> que je <strong>réalise en tant que développeur web</strong> est pensé pour offrir la meilleure <strong>expérience utilisateur</strong>. Explorez mon <em>portfolio et mes projets</em> pour en savoir plus.
+                      Par la suite, j'ai participé à une <em>formation</em> <strong>fullstack</strong> de cinq mois en bootcamp à la Wild Code School, où j'ai perfectionné mes compétences et appris <em>React.js</em>, <em>Express.js</em> et <em>Node.js</em>, <em>Git Bash</em>, <em>GitHub</em>, ainsi que  <em>PowerShell</em>.<br>
+                      Tout en découvrant l'importance du <strong>travail d'équipe</strong>, ce qui a été très bénéfique.
+                    </p>
+                    <p>
+                      Je vous invite donc à visité mes <em><a href='projects'>projets</a></em> dans mon <strong><a href='portfolio.html'>portfolio</a></strong>.
                   </p>
                 </article>
                 </div>

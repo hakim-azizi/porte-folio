@@ -31,7 +31,7 @@ for($i=0;$i<$lenght_array;$i++){
 		$number_project++;
 		?>
 	<url>
-		<loc>https://web-developer-nantes.com/<?php echo $show_project; ?></loc>
+		<loc>https://web-developer-nantes.com/projects/<?php echo $show_project; ?></loc>
 		<lastmod><?php echo date("Y-m-d"); ?></lastmod>
 	</url>
 <?php

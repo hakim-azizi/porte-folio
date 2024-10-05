@@ -91,7 +91,7 @@ elseif($_SERVER['REQUEST_URI']==='/projects/the-wild-fork.html'){
 	/* require'404.php'; */
 }
 
-require 'database.php';
+require '../database/database.php';
 $data_projects=mysqli_query($connectionbd,"SELECT * FROM `project`");
 
 $remplacementduget=str_replace(['/projects/','.html'],['','.webp'],$_SERVER['REQUEST_URI']);
@@ -101,5 +101,5 @@ $project=mysqli_fetch_array($data_project);
 if(@$project['name']){extract($project);}
 
 $adjust_url='';
-if(preg_match('/projet /',$title)){$adjust_url='../';}
+if(preg_match('/projet/',$title)){$adjust_url='../';}
 ?>

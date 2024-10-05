@@ -4,25 +4,22 @@ require './php/security.php';
 <html lang='fr'>
 	<head>
 		<title>D&eacute;veloppeur web<?php if($title!=='d&eacute;veloppeur web'){ echo ' : '.$title; } ?></title>
-		<meta name='Description' content='<?php echo $description; ?>'>
+		<meta name='Description' content='<?php echo $metat_description; ?>'>
 		<meta name='Keywords' content='<?php echo $keywords; ?>'>
 		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<meta name='contactstate' content='France'>
 		<meta name='contactcity' content='Nantes'>
 		<meta name='language' content='fr'>
-		<link href="../style/style.css" rel="stylesheet" type="text/css">
+		<link href="<?php echo $adjust_url; ?>style/style.css" rel="stylesheet" type="text/css">
 		<?php if($title==="Hakim AZIZI" OR $title==="d&eacute;veloppeur web" OR $title==="contact" OR $title==="partenaire"){  ?>
-		<link href="style/headband.css" rel="stylesheet" type="text/css">
+		<link href="<?php echo $adjust_url; ?>style/headband.css" rel="stylesheet" type="text/css">
 <?php }  ?>
 <?php if($title==='contact'){ ?>
-		<link href="style/contact.css" rel="stylesheet" type="text/css">
+		<link href="<?php echo $adjust_url; ?>style/contact.css" rel="stylesheet" type="text/css">
 <?php } ?>
 <?php if($title==='portfolio'){ ?>
-		<link href="style/portfolio.css" rel="stylesheet" type="text/css">
-<?php } ?>
-<?php if($title==='projets'){ ?>
-		<link href="style/projects.css" rel="stylesheet" type="text/css">
+		<link href="<?php echo $adjust_url; ?>style/portfolio.css" rel="stylesheet" type="text/css">
 <?php } ?>
 	</head>
 	<body>
@@ -89,5 +86,5 @@ require './php/security.php';
 		<header class='title'>
 			<h1><?php echo ucfirst($title); if($title!=='d&eacute;veloppeur web'){ ?> : d&eacute;veloppeur web <?php } ?></h1>
 			<p>Bonjour et bienvenue</p>
-			<picture style="display:flex;align-items: center;gap:1rem;"><a href='https://www.linkedin.com/in/hakim-azizi/' target='_blank'><img src="<?php echo $adjust_url; ?>images/linkedin.png" style="width:30px;height:30px;"></a><a href='https://github.com/hakim-azizi/' target='_blank'><img src="<?php echo $adjust_url; ?>images/github.png" style="width:40px;height:40px;"></a></picture>
+			<picture style="display:flex;align-items: center;gap:1rem;"><a href='https://www.linkedin.com/in/hakim-azizi/' target='_blank'><img src="<?php echo $adjust_url; ?>images/linkedin.png" style="width:30px;height:30px;" alt='logo linkedin'></a><a href='https://github.com/hakim-azizi/' target='_blank'><img src="<?php echo $adjust_url; ?>images/github.png" style="width:40px;height:40px;" alt="logo github"></a></picture>
 		</header>
