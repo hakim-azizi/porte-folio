@@ -1,5 +1,5 @@
 <?php
-$description='';
+$metat_description='';
 $keywords='';
 require 'template/header.php';
 require 'template/headband.php';

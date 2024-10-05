@@ -1,5 +1,5 @@
 <?php 
-$description='';
+$metat_description='';
 $keywords='';
 require "template/header.php"; ?>
 		<main class='content'>
@@ -8,7 +8,7 @@ require "template/header.php"; ?>
 				<div>
                 <aside>
                         <figure>
-                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.JPG' alt='d&eacute;veloppeur web hakim AZIZI' width='250px' height='auto'>
+                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.webp' alt='d&eacute;veloppeur web hakim AZIZI' width='250px' height='auto'>
                         </figure>
                     </aside>
                 <article>
@@ -38,6 +38,7 @@ require "template/header.php"; ?>
 					<figure class="alignment"><img src="photo/<?php echo $portfolio['screen']; ?>" alt=""></figure>
 					<p class="text"><?php echo $portfolio['description']; ?></p>
 					<p><a href="<?php echo $portfolio['url']; ?>" target="_blank">Tester le site</a></p>
+					<picture><a href='<?php echo $portfolio['github']; ?>' target='_blank'><img src='../images/github.png' alt='logo GitHub'></a></picture>
 				</article><?php } ?>
 				</div>
 			</section>
