@@ -13,6 +13,7 @@ if($_SERVER['REQUEST_URI']==='/index.html'){
 	exit();
 }
 
+
 if($_SERVER['REQUEST_URI']==='/projects/'){
 	header('Status: 301 Moved Permanently', false, 301);
 	header('Location: ../projects');
@@ -29,6 +30,10 @@ $valide=0;
 
 if($_SERVER['PHP_SELF']==='/index.php'){
 	$title='Hakim AZIZI';
+}
+
+if($_SERVER['PHP_SELF']==='/project-in-progress.php'){
+	$title='Projet en cours';
 }
 
 elseif($_SERVER['REQUEST_URI']==='/collaboration.html'){
@@ -90,8 +95,8 @@ elseif($_SERVER['REQUEST_URI']==='/projects/the-wild-fork.html'){
 }else{
 	/* require'404.php'; */
 }
-
-require '../database/database.php';
+if(!isset($title)){$title='';}
+require 'database/database.php';
 $data_projects=mysqli_query($connectionbd,"SELECT * FROM `project`");
 
 $remplacementduget=str_replace(['/projects/','.html'],['','.webp'],$_SERVER['REQUEST_URI']);
@@ -100,6 +105,9 @@ $data_project=mysqli_query($connectionbd,"SELECT * FROM `project` WHERE `screen`
 $project=mysqli_fetch_array($data_project);
 if(@$project['name']){extract($project);}
 
-$adjust_url='';
-if(preg_match('/projet/',$title)){$adjust_url='../';}
+
+// if(preg_match('/projet/',$title)){$adjust_url='../';}
+if($valide===1){$adjust_url='../';}else{$adjust_url='';}
+// echo $valide.' '.$adjust_url='';
+// exit();
 ?>

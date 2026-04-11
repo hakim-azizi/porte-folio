@@ -10,7 +10,6 @@ for($i=0;$i<$lenght_array;$i++){
 	}
 }
 $metat_description='';
-$keywords='';
 require 'template/header.php'; ?>
 <main>
 <?php
@@ -21,7 +20,7 @@ if($valide===0){ ?>
                 <h2><a href='/projects.html'>Projets</a></h2>
                     <aside>
                         <figure>
-                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.webp' alt='d&eacute;veloppeur web hakim AZIZI' width='250px' height='auto'>
+                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.webp' alt='d&eacute;veloppeur web hakim AZIZI' width='333px' height='auto'>
                         </figure>
                     </aside>
                 <article>
@@ -42,12 +41,15 @@ if($valide===0){ ?>
   <h2>Projets de Développement Web : Backend, Frontend et APIs</h2>
   <div  class='content'>
     <?php 
-    $data_project=mysqli_query($connectionbd,"SELECT * FROM project WHERE title_project!='' ORDER BY RAND() LIMIT 4");
+    $data_project=mysqli_query($connectionbd,"SELECT * FROM portfolio WHERE title!='' ORDER BY RAND() LIMIT 4");
+if(!$data_project){
+    die("Erreur SQL : " . mysqli_error($connectionbd));
+}
     while($project=mysqli_fetch_assoc($data_project)){ ?>
   <article>
-    <h3><?php echo $project['title_project']; ?></h3>
+    <h3><?php echo $project['title']; ?></h3>
     <figure class='alignment'><img src='photo/<?php echo $project['screen']; ?>' alt='<?php echo $project['alt']; ?>'></figure>
-    <p class='text'><?php echo $project['description_project']; ?></p>
+    <p class='text'><?php echo $project['description']; ?></p>
     <p class='text'><a href='<?php echo $project['url']; ?>'>Tester le site</a></p>
     <picture><a href='<?php echo $project['github']; ?>' target='_blank'><img src='../images/github.png' alt='logo GitHub'></a></picture>
     </article>

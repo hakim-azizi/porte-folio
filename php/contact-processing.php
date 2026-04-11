@@ -1,6 +1,5 @@
 <?php
 session_start();
-require 'security.php';
 $validate=$_SESSION['validate'];
 $validate_post=md5($_POST['boat']);
 $response='';
@@ -43,13 +42,14 @@ if($response===''){
 	$header .= "MIME-version: 1.0\n";
 	$header .= "Content-type: text/html; charset= iso-8859-1\n";
 
-	$header1 = "From: Hakim AZIZI <no-reply>\n";
+	$header1 = "From: Hakim AZIZI <noreply@web-developer-nantes.com>\n";
 	$header1 .= "MIME-version: 1.0\n";
 	$header1 .= "Content-type: text/html; charset= iso-8859-1\n";
 
-	if(mail('hakazizi@hotmail.com',$subject,$message,$header)){
+	if(mail('hakim-azizi@web-developer-nantes.com',$subject,$message,$header)){
 		$response='L&apos;email a bien &eacute;t&eacute; envoy&eacute;.';
-		if(@$receive_mail){mail($email,$subject,$message,$header1);}
+		if(@$receive_mail){mail($email,$subject,"Voici le message que vous m'avez envoyé :
+			".$message,$header1);}
 	}else{
 		$response='Une erreur c&apos;est produite, veuillez réessayer plus tard envoie.';
 	}

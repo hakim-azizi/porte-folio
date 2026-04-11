@@ -5,16 +5,17 @@ require './php/security.php';
 	<head>
 		<title>D&eacute;veloppeur web<?php if($title!=='d&eacute;veloppeur web'){ echo ' : '.$title; } ?></title>
 		<meta name='Description' content='<?php echo $metat_description; ?>'>
-		<meta name='Keywords' content='<?php echo $keywords; ?>'>
 		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<meta name='contactstate' content='France'>
 		<meta name='contactcity' content='Nantes'>
 		<meta name='language' content='fr'>
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
 		<link href="<?php echo $adjust_url; ?>style/style.css" rel="stylesheet" type="text/css">
-		<?php if($title==="Hakim AZIZI" OR $title==="d&eacute;veloppeur web" OR $title==="contact" OR $title==="partenaire"){  ?>
+		<?php // if($title==="Hakim AZIZI" OR $title==="d&eacute;veloppeur web" OR $title==="contact" OR $title==="partenaire"){  
+?>
 		<link href="<?php echo $adjust_url; ?>style/headband.css" rel="stylesheet" type="text/css">
-<?php }  ?>
+<?php // }  ?>
 <?php if($title==='contact'){ ?>
 		<link href="<?php echo $adjust_url; ?>style/contact.css" rel="stylesheet" type="text/css">
 <?php } ?>
@@ -25,12 +26,13 @@ require './php/security.php';
 	<body>
 		<header class='navbar'>
 			<nav>
-				<p><a href='../<?php echo "$adjust_url'"; if($title==="Hakim AZIZI"){ ?> class='current'<?php } ?>>Accueil</a></p>
+				<p><a href='../<?php echo "$adjust_url'"; if($title==="Hakim AZIZI"){ ?> class='current' <?php } ?>>Accueil</a></p>
 				<ul id='show-menu'>
 					<li><a href='<?php echo $adjust_url; ?>web-developer.html' <?php if($title==="d&eacute;veloppeur web"){ ?>class='current'<?php } ?>>D&eacute;veloppeur web</a></li>
 					<li><a href='<?php echo $adjust_url; ?>cv-hakim-azizi.html' <?php if($title==="CV Hakim AZIZI"){ ?>class='current'<?php } ?>>CV</a></li>
 					<li><a href='<?php echo $adjust_url; ?>portfolio.html' <?php if($title==="portfolio"){ ?>class='current'<?php } ?>>Portfolio</a></li>
-					<li id='show-projects' onclick="openProjects()"><span <?php if(strstr($title,'projet ')){ ?>class='current'<?php } ?>>Voir les projets</span>
+					<li><a href='<?php echo $adjust_url; ?>projects.html' <?php if($title==="projets"){ ?>class='current'<?php } ?>>Projets</a></li>
+					<li id='show-projects' onclick="openProjects()"><span <?php if (str_contains($title, 'projet '))  { ?>class='current'<?php } ?>>Voir les projets</span>
 					<ul id='projects'>
 					<?php 
 					$i=0;

@@ -1,6 +1,5 @@
 <?php 
 $metat_description='';
-$keywords='';
 require "template/header.php"; ?>
 		<main class='content'>
 		<section>
@@ -33,9 +32,9 @@ require "template/header.php"; ?>
 					while($portfolio=mysqli_fetch_assoc($data_portfolio)) {
 					?>
 				<article>
-					<?php $url=str_replace('.jpg','.html',$portfolio['screen']); ?>
+					<?php $url=str_replace('.webp','.html',$portfolio['screen']); ?>
 					<h3><a href='projects/<?php echo $url; ?>'><?php echo $portfolio['title']; ?></a></h3>
-					<figure class="alignment"><img src="photo/<?php echo $portfolio['screen']; ?>" alt=""></figure>
+					<figure class="alignment"><a href='projects/<?php echo $url; ?>'><img src="photo/<?php echo $portfolio['screen']; ?>" alt=""><a href='projects/<?php echo $url; ?>'></figure>
 					<p class="text"><?php echo $portfolio['description']; ?></p>
 					<p><a href="<?php echo $portfolio['url']; ?>" target="_blank">Tester le site</a></p>
 					<picture><a href='<?php echo $portfolio['github']; ?>' target='_blank'><img src='../images/github.png' alt='logo GitHub'></a></picture>
