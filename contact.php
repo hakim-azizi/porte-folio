@@ -28,20 +28,22 @@ if(!@$validate){echo'Je suis désolé,une erreur c&apos;est produite.<br>Veuille
 $_SESSION['validate']=md5($validate);
 $response=@$_SESSION['response'];
 $metat_description='';
-$keywords='';
 require 'template/header.php';
 require 'template/headband.php';
 ?>
             <main>
                 <section>
+                    <aside><figure><img src='images/web-developer-contact.webp' alt='Pour me contacter, Les information sont ci-dessous.'></figure></aside>
+                    <article>
                     <h2>Me contacter par t&eacute;l&eacute;phone</h2>
                     <p><a href='tel:+3366419734'>06 66 41 97 34</a></p>
                     <h2>Me contacter par sms</h2>
                     <p><a href='sms:+3366419734'>06 66 41 97 34</a></p>
                     <h2>Me contacter par Whatsapp</h2>
-                    <p><a href='https://api.whatsapp.com/send?phone=330666419734&text=Bonjour'>Whatsapp</a></p>
+                    <p><a href='https://api.whatsapp.com/send?phone=330666419734&text=Bonjour' target="_blank">Whatsapp</a></p>
                     <h2>Me contacter par voie postale</h2>
                     <address>M. Hakim AZIZI<br>1 avenue Jean Vigo<br>44300 Nantes</address>
+                    </article>
                 </section>
             </main>
             <div class='response'><?php echo $response; ?></div>

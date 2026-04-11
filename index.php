@@ -1,6 +1,5 @@
 <?php
 $metat_description='Je me présente Hakim AZIZI, développeur web passionné au parcours atypique...';
-$keywords='';
 require 'template/header.php';
 require 'template/headband.php';
 ?>
@@ -10,7 +9,10 @@ require 'template/headband.php';
                   <div>
                     <aside>
                         <figure>
-                            <img src='images/df66c823-29fc-40a8-8402-3e4251a59660409.webp' alt='d&eacute;veloppeur web hakim AZIZI'>
+                            <img src='images/hakim-azizi-web-developer.webp'
+                            alt='d&eacute;veloppeur web hakim AZIZI'
+                            width='250px'
+                            height='333px'>
                         </figure>
                     </aside>
                   <article>
@@ -35,6 +37,16 @@ require 'template/headband.php';
                             d&eacute;veloppeur web fullstack</a></strong>, afin d&apos;affin&eacute; mes connaissances, et d&apos;en acqu&eacute;rir 
                             d&apos;autres que je mettrais &agrave; votre service.
                       </p>
+                      <h3>Mes compétences en développement web s'étendent à plusieurs domaines.</h3>
+                      <p>
+                        En autodidacte, j'ai acquis des compétences en PHP et SQL pour le back-end, ainsi qu'en HTML, CSS et JavaScript pour le front-end.
+                      <p>
+                        J'ai approfondi mes connaissances en HTML, CSS, JavaScript et SQL grâce à une formation en bootcamp.<br>
+                        Au cours de cette formation, j'ai appris les languages React, Express mais également utiliser et Node.js, ainsi que les terminaux PowerShell et Git Bash.<br>
+                        J'ai travaillé en équipe en utilisant Trello pour la méthode Agile et GitHub pour le travail collaboratif.<br>
+                        De plus, j'ai appris à utiliser Figma pour concevoir la maquette et prototyper des applications web.
+                      </p>
+                      <p><a href='https://github.com/hakim-azizi/portfolio'>Lien Github de ce site.</a></p>
                   </article>
                   </div>
               </section>

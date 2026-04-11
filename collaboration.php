@@ -1,6 +1,5 @@
 <?php
 $metat_description='';
-$keywords='';
 include 'template/header.php';
 ?>
 <figure style='display: flex; justify-content: center;'>
