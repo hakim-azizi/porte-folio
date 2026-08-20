@@ -1,7 +1,7 @@
 :root{
 	--dark-color: #000;
 	--light-color:  #FFF;
-	--link-color:  #2086C9; 
+	--link-color:  #2086C9;
 }
 
 * {
@@ -9,7 +9,6 @@
 	padding: 0;
 	color: var(--light-color);
 	font-family: sans-serif;
-	
 }
 
 body {
@@ -85,7 +84,7 @@ a {
 	display: none;
 }
 
-@media (min-width: 921px){
+@media (min-width: 1130px){
 	.navbar>nav>ul {
 		display:flex;
 	}
@@ -100,7 +99,7 @@ a {
 	}
 }
 
-@media (max-width: 920px){
+@media (max-width: 1129px){
 	.navbar>nav>ul {
 		display:none;
 		position:fixed;
