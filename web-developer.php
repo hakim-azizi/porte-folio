@@ -16,7 +16,7 @@ require 'template/headband.php';
                   <h3>Je suis un <a href='./'>développeur web passionné</a>.</h3>
                   <p>
                       Ma passion pour le <strong>développement</strong> m'a incité <em>à coder</em> un site de commerce électronique en autodidacte.<br>
-                      En utilisant <strong>PHP</strong> et <strong>SQL</strong> pour le <em>backend</em>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> et <strong>jQuery</strong> pour le <em>frontend</em>.<br>
+                      En utilisant <strong>PHP</strong> et <strong>SQL</strong> pour le <em>back-end</em>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> et <strong>jQuery</strong> pour le <em> front-end</em>.<br>
                       <em>Développer</em>, <em>maintenir à jours</em> et <em>déboguer</em>, la Rose de l'Orient, en respectant les <strong>normes de sécurité</strong> et la <strong>réglementation RGPD</strong>, m'ont permis d'acquérir une <b>grande autonomie</b> et une <b>certaine expérience</b> dans le métier de <strong>développeur web</strong>.
                   </p>
                   <p>

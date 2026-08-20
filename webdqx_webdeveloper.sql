@@ -64,7 +64,7 @@ VALUES
   'Ce site a &eacute;t&eacute; con&ccedil;u lors de ma formation lors du &laquo; protojam &raquo;, il s&rsquo;agit de cr&eacute;er un site web avec une th&eacute;matique au choix, il se d&eacute;roule en 2 jours.<br />\nApr&egrave;s nous &ecirc;tre mis d&rsquo;accord sur les couleurs, et la technologie &agrave; utiliser, nous avons rapidement partag&eacute; le travail.<br />\nNous avons cr&eacute;&eacute; le site avec react.js pour le front, et nous n&rsquo;avons pas fait de back-end.',
   'https://github.com/hakim-azizi/carte-postale',
   'https://carte-postale.vercel.app/',
-  'la-rose-de-l-orient.webp',
+  'carte-postale.webp',
   'screen du site carte postale'
 ),
 (

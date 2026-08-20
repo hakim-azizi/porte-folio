@@ -32,6 +32,7 @@ require './php/security.php';
 					<li><a href='<?php echo $adjust_url; ?>cv-hakim-azizi.html' <?php if($title==="CV Hakim AZIZI"){ ?>class='current'<?php } ?>>CV</a></li>
 					<li><a href='<?php echo $adjust_url; ?>portfolio.html' <?php if($title==="portfolio"){ ?>class='current'<?php } ?>>Portfolio</a></li>
 					<li><a href='<?php echo $adjust_url; ?>projects.html' <?php if($title==="projets"){ ?>class='current'<?php } ?>>Projets</a></li>
+					<li><a href='<?php echo $adjust_url; ?>project-in-progress.html' <?php if($title==="Projet en cours"){ ?>class='current'<?php } ?>>Projet en cours</a></li>
 					<li id='show-projects' onclick="openProjects()"><span <?php if (str_contains($title, 'projet '))  { ?>class='current'<?php } ?>>Voir les projets</span>
 					<ul id='projects'>
 					<?php 

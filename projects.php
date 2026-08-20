@@ -38,7 +38,7 @@ if($valide===0){ ?>
                 </div></div>
             </section>
 <section>
-  <h2>Projets de Développement Web : Backend, Frontend et APIs</h2>
+  <h2>Projets de Développement Web : Back-end,  front-end et APIs</h2>
   <div  class='content'>
     <?php 
     $data_project=mysqli_query($connectionbd,"SELECT * FROM portfolio WHERE title!='' ORDER BY RAND() LIMIT 4");
@@ -61,11 +61,11 @@ if(!$data_project){
 <section>
   <h2>Caractéristique technique:</h2>
   <article>
-    <h3>Objectif, langage, framework, outils et technique utilisée :</h3>
-    <figure class='screen'><a href="<?php echo $url; ?>" target="_blank"><img src='../photo/<?php echo $screen; ?>' alt='<?php echo $alt; ?>'></a></figure>
-    <p class='text'><?php echo nl2br($description); ?></p>
-    <p><a href="<?php echo $url; ?>" target="_blank">Tester le site</a></p>
-    <picture><a href='<?php echo $github; ?>' target='_blank'><img src='../images/github.png' alt='logo GitHub'></a></picture>
+    <h3>Objectif, langage, framework, outils et technique utilisée :</h3>
+    <figure class='screen'><a href="<?php echo $project['url']; ?>" target="_blank"><img src='../photo/<?php echo $project['screen']; ?>' alt='<?php echo $alt; ?>'></a></figure>
+    <p class='text'><?php echo nl2br($project['description']); ?></p>
+    <p><a href="<?php echo $project['url']; ?>" target="_blank">Tester le site</a></p>
+    <picture><a href='<?php echo $project['github']; ?>' target='_blank'><img src='../images/github.png' alt='logo GitHub'></a></picture>
     </article>
     <div style='clear: both;'></div>
 <?php } ?>
